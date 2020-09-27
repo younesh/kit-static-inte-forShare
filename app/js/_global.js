@@ -25,5 +25,5 @@ app.global = {
     }
 };
 
-// Run the global stuff __ from Y:O:U:N:E:S  C:H:R:A:K  __
+// Run the global stuff __ from Y:O:U:N:E:S  C:H:R:A:K   __
 app.global.init();
