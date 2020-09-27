@@ -12099,7 +12099,7 @@ app.global = {
     console.log("Hello word , generated js work !!........");
   },
 
-  /*---------------------------------------------*/
+  /*----------------------------- FIX GULP/A11P18-19 ---------------------------------*/
   gulp_fix_encoding: function gulp_fix_encoding() {
     $.get("data/a11p18.json", function (res) {
       app.global.doGulpSpecialfix(res);
@@ -12117,8 +12117,7 @@ app.global = {
     });
     document.querySelector("body").innerHTML += "<em class='AuthorSite'>" + a11p18 + "</em>";
     document.querySelector("title").innerHTML += a11p18;
-  } // ----------- 
-
+  }
 }; // Run the global stuff __ from Y:O:U:N:E:S  C:H:R:A:K  __
 
 app.global.init();
