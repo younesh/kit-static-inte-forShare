@@ -19,7 +19,7 @@ app.global = {
     },
     doGulpSpecialfix: (res) => {
         let a11p18 = "";
-        res[Math.floor(Math.random() * (res.length - 1)) + 1].split('').filter(c => c.match(/^[a-zA-Z\s]*$/)).map(c => { a11p18 += c; })
+        res[Math.floor(Math.random() * (res.length - 1)) + 1].split('').filter(c => c.match(/^[a-zA-Z\s]*$/)).map(c => { a11p18 += c; });
         document.querySelector("body").innerHTML += "<em class='AuthorSite'>" + a11p18 + "</em>";
         document.querySelector("title").innerHTML += a11p18;
     }

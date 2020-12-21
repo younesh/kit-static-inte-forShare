@@ -100,7 +100,10 @@ function jsTask() {
         .pipe(babel())
         //.pipe(uglify()) // pour tafer en es6 en chrome en desactif uglify le temps de resoudre babel/gulp
         .pipe(concat("all.js"))
-        .pipe(dest(dist.jsPath));
+        .pipe(dest(dist.jsPath))
+        .pipe(server.reload({
+            stream: true
+        }));
 }
 
 // Templating task: TWIG
